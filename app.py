@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 
 def hello_youtube():
-    target = os.environ.get('TARGET', 'HELLO YOUTUBE')
+    target = os.environ.get('TARGET', 'HELLO YOUTUBE from jenkins')
     return 'Hello {}!\n'.format(target)
 
 if __name__ == "__main__":
